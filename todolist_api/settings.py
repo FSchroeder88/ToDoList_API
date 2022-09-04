@@ -26,18 +26,22 @@ SECRET_KEY = 'django-insecure-8=jqk3^_wx9=k6o6m61i2$*#c*3cmwwo9f36-jh6%3tk9cl#@!
 DEBUG = True
 
 ALLOWED_HOSTS = ['technoschroeder.pythonanywhere.com', 
-                 'localhost']
+                 'localhost',
+                 '127.0.0.1:8000',
+                 '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ToDoList'
 ]
 
 MIDDLEWARE = [
